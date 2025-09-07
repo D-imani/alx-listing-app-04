@@ -1,11 +1,16 @@
-export interface CardProps{
-
+export interface CardProps {}
+export interface ButtonProps {}
+export interface Property {
+  id: string | number;
+  title: string;
+  location: string;
+  price: number;
+  bedrooms: number;
+  bathrooms: number;
+  imageUrl: string;
 }
-export interface ButtonProps{
-    
-}
-export interface PropertyProps{
-    name: string;
+export interface PropertyProps {
+  name: string;
   address: {
     state: string;
     city: string;
@@ -21,6 +26,10 @@ export interface PropertyProps{
   };
   image: string;
   discount: string;
+}
+
+interface PropertyCardProps {
+  id: string | number; // API property ID
 }
 export interface PillProps {
   label: string;
